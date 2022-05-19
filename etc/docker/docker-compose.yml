@@ -1,0 +1,9 @@
+version: "2"
+services:
+  node_http_dump:
+    build:
+      context: ../../
+      dockerfile: etc/docker/Dockerfile
+    ports:
+      - "3001:3000"
+    command: "npm start"
